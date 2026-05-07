@@ -5,6 +5,7 @@ from '@react-navigation/bottom-tabs';
 
 import HomeScreen from '../screens/HomeScreen';
 import HistoryScreen from '../screens/HistoryScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,6 +38,11 @@ export default function BottomTabs({
         )}
 
       </Tab.Screen>
+
+      <Tab.Screen
+        name="Tentang"
+        component={AboutScreen}
+      />
 
     </Tab.Navigator>
   );
